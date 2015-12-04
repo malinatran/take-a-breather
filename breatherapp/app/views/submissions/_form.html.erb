@@ -1,0 +1,21 @@
+<%= form_for(@submission, url: @form_path) do |f| %>
+
+  <div class="label"><%= f.label :date %></div>
+  <div class="field"><%= f.text_field :date %></div>
+
+  <div class="label"><%= f.label :location %></div>
+  <div class="field"><%= f.text_field :location %></div>
+
+  <div class="label"><%= f.label :feeling %></div>
+  <div class="field"><%= f.select(:feeling, [['Angry or frustrated', 'angry'], ['Anxious', 'anxious'], ['Helpless', 'helpless'], ['Humiliated', 'humiliated'], ['Sad, uspet, or depressed', 'sad'], ['Stressed', 'stressed'], ['Undervalued', 'undervalued']], {}, { :multiple => true, :size => 5} ) %>
+  </div>
+
+  <div class="label"><%= f.label :conflict %></div>
+  <div class="field"> <%= f.select(:conflict, options_for_select(['Myself','My partner','My parents', 'Sibling', 'Other family member','Friend or acquaintance','Stranger','Colleague or coworker', 'Other'], @submission.conflict), include_blank: true ) %></div>
+
+  <div class="label"><%= f.label :letter %></div>
+  <div class="field"><%= f.text_area :letter %></div>
+
+  <div class="submit-btn"><%= f.submit 'SUBMIT' %></div>
+
+<% end %>

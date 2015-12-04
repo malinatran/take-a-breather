@@ -1,0 +1,107 @@
+/* Dashboard */
+#dashboard-logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+}
+
+/* Homepage */
+
+
+
+/* Support Resources */
+
+#circle1 {
+  background-color: #FF6666;
+  border-radius: 50%;
+  float: left;
+  height: 175px;
+  margin: 10px;
+  width: 175px;
+  text-align: center;
+  z-index: 2;
+}
+
+#circle2 {
+  background-color: #FF9966;
+  border-radius: 50%;
+  float: left;
+  height: 175px;
+  margin: 10px;
+  width: 175px;
+  text-align: center;
+  z-index: 2;
+}
+
+#circle3 {
+  background-color: #FFCC66;
+  border-radius: 50%;
+  float: left;
+  height: 175px;
+  margin: 10px;
+  width: 175px;
+  text-align: center;
+  z-index: 2;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.circle-num {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.circle-text {
+  color: black;
+  font-family: 'Nunito', sans serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 0;
+}
+
+.circle-text:visited {
+  color: black;
+}
+
+.circle-info {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+/* Devise elements */
+
+.notice, .alert {
+
+}
+
+.navbar-text {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+
+.navbar-link {
+  color: black;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: 'Nunito', sans serif;
+  font-size: 28px;
+}
+
+h3 {
+  font-family: 'Nunito', sans serif;
+  font-size: 20px;
+}
+
+.edit-user input {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
+

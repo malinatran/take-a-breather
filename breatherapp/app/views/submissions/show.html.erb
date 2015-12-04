@@ -1,0 +1,20 @@
+
+<div class="label">Date</div>
+<div class="field"><%= @submission.date.strftime("%b %-d, %Y")  %></div>
+
+<div class="label">Location</div>
+<div class="field"><%= @submission.location %></div>
+
+<div class="label">Feeling</div>
+<div class="field"><%= @submission.feeling.split(',').join(', ') %></div>
+
+<div class="label">Conflict</div>
+<div class="field"><%= @submission.conflict %></div>
+
+<div class="label">Letter</div>
+<div class="field"><%= @submission.letter %></div>
+
+<%= link_to 'Edit', edit_user_submission_path %>
+<%= link_to 'Delete', user_submission_path, :method => 'delete' %>
+<%= link_to 'Submissions', user_submissions_path %>
+<%= link_to 'Home', root_path %>

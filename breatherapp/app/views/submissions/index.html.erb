@@ -1,0 +1,7 @@
+<% @submissions.each do |entry| %>
+  <%= entry.date.strftime("%b %-d, %Y")  %>
+  <%= link_to 'View', user_submission_path(current_user.id, entry.id) %>
+  <%= link_to 'Edit', edit_user_submission_path(current_user.id, entry.id) %>
+<% end %>
+
+<%= link_to 'Home', root_path %>
