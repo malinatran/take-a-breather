@@ -1,0 +1,28 @@
+<div id="main-container">
+
+  <div id="circle-container">
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Share", new_user_submission_path(current_user), class: "circle-text-greyed" %></div>
+      <div class="circle-info">Create new entry</div>
+    </div>
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Reflect", user_submissions_path(current_user), class: "circle-text-greyed" %></div>
+      <div class="circle-info">View past entries</div>
+    </div>
+    <div id="circle3">
+      <div class="circle-star" style="color: #c8995a">&#10036;</div>
+      <div class="circle-text"><%= link_to "Connect", connect_path, class: "link" %></div>
+      <div class="circle-info">Find resources</div>
+    </div>
+  </div>
+
+  <div id="display-container-yellow">
+    <div id="x-background-yellow"><%= link_to 'X', root_path, class: 'home-link' %></div>
+    <p id="display-message">Support Circle</p>
+    <p class="display-text">I am in distress and would like to reach out to my main contacts.</p>
+    <%= link_to "Send Text", sendtext_path, method: 'POST', class: 'send-text-btn' %>
+  </div>
+
+</div>

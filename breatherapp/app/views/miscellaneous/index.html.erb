@@ -1,21 +1,32 @@
-<div id='dashboard-logo'>Breather</div>
+<div id="main-container">
 
-<div id='circle1'>
-  <div>
-    <div class='circle-num'>1.</div>
-    <div class='circle-text'><%= link_to 'Share', new_user_submission_path(current_user), class: 'link' %></div>
-    <div class='circle-info'>Create new entry</div>
+  <div id="circle-container">
+    <div id="circle1">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text"><%= link_to "Share", new_user_submission_path(current_user), class: "link" %></div>
+      <div class="circle-info">Create new entry</div>
+    </div>
+    <div id="circle2">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text"><%= link_to "Reflect", user_submissions_path(current_user), class: "link" %></div>
+      <div class="circle-info">View all entries</div>
+    </div>
+    <div id="circle3">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text"><%= link_to "Connect", connect_path, class: "link" %></div>
+      <div class="circle-info">Find resources</div>
+    </div>
   </div>
-</div>
-<div id='circle2'>
-  <div class='circle-num'>2.</div>
-  <div class='circle-text'><%= link_to 'Reflect', user_submissions_path(current_user), class: 'link' %></div>
-  <div class='circle-info'>View past entries</div>
-</div>
-<div id='circle3'>
-  <div>
-    <div class='circle-num'>3.</div>
-    <div class='circle-text'>Connect</div>
-    <div class='circle-info'>Find resources</div>
+
+  <div id="display-container">
+    <div id="display-quote">
+      <q>Be not afraid of life. Believe that life is worth living, and your belief will help create the fact.</q><br>&mdash;
+    </div>
+    <br>
+    <p class="display-text">1,2, and breathe. Experiencing emotions is human. But sometimes, it may feel uncomfortable or disempowering.</p> 
+    <p class="display-text">Welcome to a safe and secure space where you can work through your feelings and identify resources as you navigate your situation.</p>
+    <p class="display-text">We wish you all the best!</p>
+    <p class="display-text">– The Take a Breather Team</p>
   </div>
+
 </div>

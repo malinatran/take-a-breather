@@ -16,7 +16,7 @@ class SubmissionsController < ApplicationController
 
   def create
     @submission = current_user.submissions.build(submission_params)
-    empty_string = params[:submission][:feeling].shift
+    remove_string = params[:submission][:feeling].shift
     @submission.feeling = params[:submission][:feeling].join(',')
     # @submission.user_id = current_user.id
     if @submission.save
@@ -33,6 +33,8 @@ class SubmissionsController < ApplicationController
 
   def update
     @submission = Submission.find(params[:id])
+    remove_string = params[:submission][:feeling].shift
+    @submission.feeling = params[:submission][:feeling].join(',')
     @submission.update(submission_params)
     redirect_to user_submission_path(user_id: current_user.id, id: @submission.id)
   end

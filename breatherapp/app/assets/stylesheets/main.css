@@ -1,46 +1,95 @@
-/* Dashboard */
+body {
+  background: url("geometry.png") repeat center center fixed;
+}
+
+.date {
+  color: black;
+  float: left;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 40px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.action {
+  width: 60px;
+}
+
+.form {
+  text-align: center;
+}
+
+.label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding-bottom: 2.5px;
+  padding-top: 0;
+}
+
+.field {
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+.field a {
+  color: black;
+  text-decoration: none;
+}
+
+.location-field {
+  width: 250px;
+}
+
+textarea {
+  color: black;
+  font-size: 12px;
+  border: 1px solid black;
+  height: 55px;
+  padding: 5px;
+  width: 375px;
+}
+
+input[type=text] {
+  color: #000;
+  font-size: 12px;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+.form-num {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+/********* (1) Dashboard *********/
+
 #dashboard-logo {
   font-family: 'Nunito', sans-serif;
-  font-size: 40px;
+  font-size: 28px;
+  text-align: left;
+  text-shadow: 10px 10px 50px #5AC0C8,
+  -10px -10px 50px #5AC0C8;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
-/* Homepage */
+/********* (2a) Submissions – New *********/
 
-
-
-/* Support Resources */
-
-#circle1 {
-  background-color: #FF6666;
-  border-radius: 50%;
-  float: left;
-  height: 175px;
-  margin: 10px;
-  width: 175px;
-  text-align: center;
-  z-index: 2;
-}
-
-#circle2 {
-  background-color: #FF9966;
-  border-radius: 50%;
-  float: left;
-  height: 175px;
-  margin: 10px;
-  width: 175px;
-  text-align: center;
-  z-index: 2;
-}
-
-#circle3 {
-  background-color: #FFCC66;
-  border-radius: 50%;
-  float: left;
-  height: 175px;
-  margin: 10px;
-  width: 175px;
-  text-align: center;
-  z-index: 2;
+.home-link {
+  color: black;
+  float: right;
+  font-family: 'Nunito', sans serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  text-decoration: none;
 }
 
 .link {
@@ -48,41 +97,289 @@
   text-decoration: none;
 }
 
-.circle-num {
+.edit-link, .view-link, .delete-link {
+  color: black;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+}
+
+.submit-btn {
+  background-color: white;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+.submit-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+
+/********* (2b) Submissisons - Show *********/
+
+.show-label {
+  color: #ff9966;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.show-field {
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.edit-btn, .delete-btn, .all-entries-btn {
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+.edit-btn:hover, .delete-btn:hover, .all-entries-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/********* (3) Container Nation *********/
+
+#main-container {
+  margin: 0 auto;
+}
+
+#circle-container {
+  float: left;
+  margin-left: 20%;
+  margin-right: 40px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+#display-container {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid #909090;
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 400px;
+}
+
+#display-container-pink {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid rgba(255,102,102,0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+#display-container-orange {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid rgba(255,153,102,0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+#display-container-yellow {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid rgba(255,204,102,0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+#form-container {
+  margin-top: 30px;
+}
+
+.field-container {
+  margin-bottom: 16px;
+}
+
+#button-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#display-quote {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#display-message {
+  /*border-bottom: 3px solid rgba(255,153,102,0.7);*/
+  font-family: 'Nunito', sans serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+.display-text {
+  font-family: 'Nunito', sans serif;
+  font-size: 18px;
+}
+
+/********* (4) Support Resources *********/
+
+#circle1 {
+  background-color: rgba(255,102,102,0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+#circle2 {
+  background-color: rgba(255,153,102,0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+#circle3 {
+  background-color: rgba(255,204,102,0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+#circle4 {
+  background-color: rgba(90,192,200,0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+.circle-star {
   color: #fff;
   font-family: 'Roboto Slab', serif;
   font-size: 30px;
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 .circle-text {
   color: black;
   font-family: 'Nunito', sans serif;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 400;
   text-decoration: none;
   z-index: 0;
 }
 
 .circle-text:visited {
-  color: black;
+  color: #909090;
 }
 
 .circle-info {
   color: white;
   font-family: 'Roboto Slab', serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
-/* Devise elements */
+.greyed {
+  background-color: rgba(192,192,192,0.5);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+.circle-text-greyed {
+  color: #909090;
+  font-family: 'Nunito', sans serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 0;
+}
+
+.send-text-btn {
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+.send-text-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/********* (5a) Devise elements: edit profile *********/
 
 .notice, .alert {
-
+  color: #5ac0c8;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .navbar-text {
-  font-family: 'Roboto Slab', serif;
+  float: right;
+  font-family: 'Nunito', sans serif;
   font-size: 16px;
+  font-weight: 300;
+  margin-top: 0;
+  text-align: right;
+  width: 500px;
 }
 
 .navbar-link {
@@ -103,5 +400,120 @@ h3 {
 .edit-user input {
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
+}
+
+.update-btn, .signup-btn, .login-btn {
+  background-color: white;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+.update-btn:hover, .signup-btn:hover, .login-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+.reset-btn {
+  background-color: white;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 275px;
+}
+
+.reset-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 275px;
+}
+
+
+
+.cancel-btn {
+  background-color: white;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 150px;
+}
+
+.cancel-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 150px;
+}
+
+#display-container-blue {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid rgba(90,192,200,0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+.back-btn {
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  padding: 4px 25px;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #c8995a;
+  border: 2px solid #c8995a;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  padding: 4px 25px;
+  text-decoration: none;
+}
+
+#edit-form-container {
+  margin-top: 25px;
+}
+
+/********* (5b) Devise elements: sign up / log in; *********/
+
+#display-container-blue-short {
+  background: rgba(255,255,255,0.8);
+  border: 5px solid rgba(90,192,200,0.7);
+  float: left;
+  height: 300px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
 }
 

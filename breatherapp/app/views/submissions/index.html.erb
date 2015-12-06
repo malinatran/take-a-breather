@@ -1,7 +1,38 @@
-<% @submissions.each do |entry| %>
-  <%= entry.date.strftime("%b %-d, %Y")  %>
-  <%= link_to 'View', user_submission_path(current_user.id, entry.id) %>
-  <%= link_to 'Edit', edit_user_submission_path(current_user.id, entry.id) %>
-<% end %>
+<div id="main-container">
 
-<%= link_to 'Home', root_path %>
+  <div id="circle-container">
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Share", new_user_submission_path(current_user), class: "circle-text-greyed" %></div>
+      <div class="circle-info">Create new entry</div>
+    </div>
+    <div id="circle2">
+      <div class="circle-star" style="color: #c8995a">&#10036;</div>
+      <div class="circle-text"><%= link_to "Reflect", user_submissions_path(current_user), class: "link" %></div>
+      <div class="circle-info">View past entries</div>
+    </div>
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Connect", connect_path, class: "circle-text-greyed" %></div>
+      <div class="circle-info">Find resources</div>
+    </div>
+  </div>
+
+  <div id="display-container-orange">
+    <%= link_to 'X', root_path, class: 'home-link' %>
+    <p id="display-message">All Entries</p>
+    <table>
+      <tbody>
+        <% @submissions.each do |entry| %>
+        <tr>
+          <td class="date"><%= entry.date.try(:strftime, "%a | %b %-d, %Y") %></td>
+          <td class="action"><%= link_to 'View', user_submission_path(current_user.id, entry.id), class: 'view-link' %></td>
+          <td class="action"><%= link_to 'Edit', edit_user_submission_path(current_user.id, entry.id), class: 'edit-link' %></td>
+          <td class="action"><%= link_to 'Delete', user_submission_path(current_user.id, entry.id), :method => 'delete', class: 'delete-link' %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+
+</div>

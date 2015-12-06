@@ -1,20 +1,54 @@
+<div id="main-container">
 
-<div class="label">Date</div>
-<div class="field"><%= @submission.date.strftime("%b %-d, %Y")  %></div>
+  <div id="circle-container">
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Share", new_user_submission_path(current_user), class: "circle-text-greyed" %></div>
+      <div class="circle-info">Create new entry</div>
+    </div>
+    <div id="circle2">
+      <div class="circle-star" style="color: #c8995a">&#10036;</div>
+      <div class="circle-text"><%= link_to "Reflect", user_submissions_path(current_user), class: "link" %></div>
+      <div class="circle-info">View past entries</div>
+    </div>
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to "Connect", connect_path, class: "circle-text-greyed" %></div>
+      <div class="circle-info">Find resources</div>
+    </div>
+  </div>
 
-<div class="label">Location</div>
-<div class="field"><%= @submission.location %></div>
+  <div id="display-container-orange">
+    <%= link_to 'X', root_path, class: 'home-link' %>
 
-<div class="label">Feeling</div>
-<div class="field"><%= @submission.feeling.split(',').join(', ') %></div>
+    <p id="display-message"><%= @submission.date.try(:strftime, "%a | %b %-d, %Y") %></p>
 
-<div class="label">Conflict</div>
-<div class="field"><%= @submission.conflict %></div>
+    <div id="button-container">
+      <%= link_to 'Edit', edit_user_submission_path, class: 'edit-btn' %>
+      <%= link_to 'Delete', user_submission_path, :method => 'delete', class: 'delete-btn' %>
+      <%= link_to 'All Entries', user_submissions_path, class: 'all-entries-btn' %>
+    </div>
 
-<div class="label">Letter</div>
-<div class="field"><%= @submission.letter %></div>
+    <div class="field-container">
+      <div class="show-label">I was located at</div>
+      <div class="show-field"><%= @submission.location %></div>
+    </div>
 
-<%= link_to 'Edit', edit_user_submission_path %>
-<%= link_to 'Delete', user_submission_path, :method => 'delete' %>
-<%= link_to 'Submissions', user_submissions_path %>
-<%= link_to 'Home', root_path %>
+    <div class="field-container">
+      <div class="show-label">Feelings</div>
+      <div class="show-field"><%= @submission.feeling.split(',').join(', ') %></div>
+    </div>
+
+    <div class="field-container">
+      <div class="show-label">I was experiencing conflict mainly with</div>
+      <div class="show-field"><%= @submission.conflict %></div>
+    </div>
+
+    <div class="field-container">
+      <div class="show-label">My letter of reflection</div>
+      <div class="show-field"><%= @submission.letter %></div>
+    </div>
+
+  </div>
+
+</div>
