@@ -108,7 +108,7 @@ input[type=text] {
 
 .submit-btn {
   background-color: white;
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -118,8 +118,8 @@ input[type=text] {
 }
 
 .submit-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -145,7 +145,7 @@ input[type=text] {
 }
 
 .edit-btn, .delete-btn, .all-entries-btn {
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -156,8 +156,8 @@ input[type=text] {
 }
 
 .edit-btn:hover, .delete-btn:hover, .all-entries-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -341,7 +341,7 @@ input[type=text] {
 }
 
 .send-text-btn {
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -352,8 +352,8 @@ input[type=text] {
 }
 
 .send-text-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -404,7 +404,7 @@ h3 {
 
 .update-btn, .signup-btn, .login-btn {
   background-color: white;
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -414,8 +414,8 @@ h3 {
 }
 
 .update-btn:hover, .signup-btn:hover, .login-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -426,7 +426,7 @@ h3 {
 
 .reset-btn {
   background-color: white;
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -436,8 +436,8 @@ h3 {
 }
 
 .reset-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -446,11 +446,9 @@ h3 {
   width: 275px;
 }
 
-
-
 .cancel-btn {
   background-color: white;
-  border: 2px solid #c8995a;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -460,8 +458,8 @@ h3 {
 }
 
 .cancel-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;
@@ -481,7 +479,7 @@ h3 {
 }
 
 .back-btn {
-  border: 2px solid #c8995a;
+  border: 2px solid ##5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;
@@ -491,8 +489,8 @@ h3 {
 }
 
 .back-btn:hover {
-  background-color: #c8995a;
-  border: 2px solid #c8995a;
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #fff;
   font-family: 'Nunito', sans serif;

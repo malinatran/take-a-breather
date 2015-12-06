@@ -14,10 +14,6 @@ Rails.application.routes.draw do
     resources :submissions
   end
 
-  resources :users do
-    resources :contacts
-  end
-  
 #                   Prefix Verb   URI Pattern                                    Controller#Action
 #         new_user_session GET    /users/sign_in(.:format)                       devise/sessions#new
 #             user_session POST   /users/sign_in(.:format)                       devise/sessions#create
@@ -50,22 +46,6 @@ Rails.application.routes.draw do
 #                 new_user GET    /users/new(.:format)                           users#new
 #                edit_user GET    /users/:id/edit(.:format)                      users#edit
 #                     user GET    /users/:id(.:format)                           users#show
-#                          PATCH  /users/:id(.:format)                           users#update
-#                          PUT    /users/:id(.:format)                           users#update
-#                          DELETE /users/:id(.:format)                           users#destroy
-#            user_contacts GET    /users/:user_id/contacts(.:format)             contacts#index
-#                          POST   /users/:user_id/contacts(.:format)             contacts#create
-#         new_user_contact GET    /users/:user_id/contacts/new(.:format)         contacts#new
-#        edit_user_contact GET    /users/:user_id/contacts/:id/edit(.:format)    contacts#edit
-#             user_contact GET    /users/:user_id/contacts/:id(.:format)         contacts#show
-#                          PATCH  /users/:user_id/contacts/:id(.:format)         contacts#update
-#                          PUT    /users/:user_id/contacts/:id(.:format)         contacts#update
-#                          DELETE /users/:user_id/contacts/:id(.:format)         contacts#destroy
-#                          GET    /users(.:format)                               users#index
-#                          POST   /users(.:format)                               users#create
-#                          GET    /users/new(.:format)                           users#new
-#                          GET    /users/:id/edit(.:format)                      users#edit
-#                          GET    /users/:id(.:format)                           users#show
 #                          PATCH  /users/:id(.:format)                           users#update
 #                          PUT    /users/:id(.:format)                           users#update
 #                          DELETE /users/:id(.:format)                           users#destroy
