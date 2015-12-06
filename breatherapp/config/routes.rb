@@ -6,10 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'miscellaneous#index'
-
+  root 'miscellaneous#dashboard'
   get '/connect' => 'connect#index'
-
   post '/sendtext' => 'send_text#create'
 
   resources :users do
@@ -36,7 +34,7 @@ Rails.application.routes.draw do
 #                          PATCH  /users(.:format)                               registrations#update
 #                          PUT    /users(.:format)                               registrations#update
 #                          DELETE /users(.:format)                               registrations#destroy
-#                     root GET    /                                              miscellaneous#index
+#                     root GET    /                                              miscellaneous#dashboard
 #                  connect GET    /connect(.:format)                             connect#index
 #                 sendtext POST   /sendtext(.:format)                            send_text#create
 #         user_submissions GET    /users/:user_id/submissions(.:format)          submissions#index
@@ -71,5 +69,5 @@ Rails.application.routes.draw do
 #                          PATCH  /users/:id(.:format)                           users#update
 #                          PUT    /users/:id(.:format)                           users#update
 #                          DELETE /users/:id(.:format)                           users#destroy
-
+                         
 end
