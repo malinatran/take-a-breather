@@ -70,6 +70,8 @@ input[type=text] {
 #dashboard-logo {
   font-family: 'Nunito', sans-serif;
   font-size: 28px;
+  padding-left: 5px;
+  padding-top: 5px;
   text-align: left;
   text-shadow: 10px 10px 50px #5AC0C8,
   -10px -10px 50px #5AC0C8;
@@ -515,3 +517,68 @@ h3 {
   width: 400px;
 }
 
+/********* Media queries *********/
+@media (max-width: 1000px) {
+  #circle-container {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 900px) {
+  #circle-container {
+    margin-left: 10%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 878px) {
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+  #circle-container {
+    margin-left: 10%;
+  } 
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 0;
+  } 
+}
+
+@media (max-width: 756px) {
+  #circle1, #circle2, #circle3, #circle4, .greyed {
+    float: left;
+  }
+  #circle-container {
+    margin-left: 10%;
+    width: 600px;
+  } 
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 100px;
+  } 
+}
+
+
+@media (max-width: 643px) {
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+  #circle-container {
+    margin-left: 5%;
+    width: 600px;
+  } 
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 75px;
+  } 
+}
+
+@media (max-width: 608px) {
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+  #circle-container {
+    margin-left: 20px;
+    width: 600px;
+  } 
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 60px;
+  }
+}
