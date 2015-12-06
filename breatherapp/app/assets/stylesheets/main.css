@@ -234,6 +234,7 @@ input[type=text] {
 #button-container {
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-top: 10px;
 }
 
 #display-quote {
@@ -368,7 +369,7 @@ input[type=text] {
 /********* (5a) Devise elements: edit profile *********/
 
 .notice, .alert {
-  color: #5ac0c8;
+  color: black;
   font-family: 'Nunito', sans serif;
   font-size: 16px;
   font-weight: 300;
@@ -391,7 +392,12 @@ input[type=text] {
 
 h2 {
   font-family: 'Nunito', sans serif;
-  font-size: 28px;
+  font-size: 16px;
+}
+
+ul li {
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
 }
 
 h3 {
@@ -455,10 +461,10 @@ h3 {
   color: #000;
   font-family: 'Nunito', sans serif;
   font-size: 14px;
-  height: 30px;
-  width: 150px;
+  padding: 4px 20px;
+  text-decoration: none;
 }
-
+b
 .cancel-btn:hover {
   background-color: #5ac0c8;
   border: 2px solid #5ac0c8;
@@ -474,14 +480,14 @@ h3 {
   background: rgba(255,255,255,0.8);
   border: 5px solid rgba(90,192,200,0.7);
   float: left;
-  height: 475px;
+  height: auto;
   margin-top: 20px;
   padding: 0 20px 20px;
   width: 400px;
 }
 
 .back-btn {
-  border: 2px solid ##5ac0c8;
+  border: 2px solid #5ac0c8;
   border-radius: 5px;
   color: #000;
   font-family: 'Nunito', sans serif;

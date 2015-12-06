@@ -11,7 +11,7 @@
     </div>
 
     <div class="field-container"> 
-      <div class="label"><span class="form-num">3.</span> How are you feeling today? (To select multiple, hold down the ⌘ button).</div>
+      <div class="label"><span class="form-num">3.</span> How are you feeling today? (To select multiple, hold down the ⌘ button in Mac or ctrl button in Windows).</div>
       <div class="emotion_list"><%= f.select(:feeling, [['Angry/frustrated', 'Angry/frustrated'], ['Anxious', 'Anxious'], ['Helpless', 'Helpless'], ['Humiliated', 'Humiliated'], ['Sad/upset/depressed', 'Sad/upset/depressed'], ['Stressed', 'Stressed'], ['Undervalued', 'Undervalued']], {}, { :multiple => true, :size => 5} ) %></div>
       </div>
 
