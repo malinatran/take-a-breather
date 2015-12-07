@@ -1,0 +1,34 @@
+<div id="main-container">
+
+  <div id="circle-container">
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to 'Sign up', new_user_registration_path, class: 'circle-text-greyed' %></div>
+      <div class="circle-info">New User</div>
+    </div>
+    <div id="circle4">
+      <div class="circle-star" style="color: #c8995a">&#10036;</div>
+      <div class="circle-text"><%= link_to 'Log in', new_user_session_path, class: 'link' %></div>
+      <div class="circle-info">Returning User</div>
+    </div>
+  </div>
+
+  <div id="display-container-blue-short">
+    <div id="edit-form-container">
+      <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="field field-container">
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true %>
+        </div>
+
+        <div class="actions">
+          <%= f.submit "Send me reset password instructions", class: 'reset-btn' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+

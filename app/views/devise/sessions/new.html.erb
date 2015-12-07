@@ -1,0 +1,49 @@
+<div id="dashboard-logo">Take a Breather</div>
+
+<div id="main-container">
+
+  <div id="circle-container">
+    <div class="greyed">
+      <div class="circle-star">&#10036;</div>
+      <div class="circle-text-greyed"><%= link_to 'Sign up', new_user_registration_path, class: 'circle-text-greyed' %></div>
+      <div class="circle-info">New User</div>
+    </div>
+    <div id="circle4">
+      <div class="circle-star" style="color: #c8995a">&#10036;</div>
+      <div class="circle-text"><%= link_to 'Log in', new_user_session_path, class: 'link' %></div>
+      <div class="circle-info">Returning User</div>
+    </div>
+  </div>
+
+  <div id="display-container-blue-short">
+    <div id="edit-form-container">
+     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field field-container">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+
+      <div class="field field-container">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+      </div>
+
+      <% if devise_mapping.rememberable? -%>
+        <div class="field field-container">
+          <%= f.check_box :remember_me %>
+          <%= f.label :remember_me %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "Login", class: 'login-btn' %>
+      </div>
+
+      <% end %>
+      <br>
+      <div class="field"><%= render "devise/shared/links" %></div>
+    </div>
+  </div>
+
+</div>
+
