@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/* line 1, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+html, body {
+  background: url(/assets/geometry-e93d11fbf42542bb4826817055788fd115c21b86aa801fb7996beebad2b06e06.png) repeat center center fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 8, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.homepage {
+  text-align: center;
+}
+
+/* line 12, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+/* line 17, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#content {
+  padding-bottom: 20px;
+}
+
+/* line 21, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#footer {
+  height: 20px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 29, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#footer-text {
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  margin: 0;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+/* line 38, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#footer-text a {
+  color: black;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* line 45, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.date {
+  color: black;
+  float: left;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding-right: 40px;
+  text-decoration: none;
+  width: 200px;
+}
+
+/* line 56, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.action {
+  width: 60px;
+}
+
+/* line 60, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.form {
+  text-align: center;
+}
+
+/* line 64, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  padding-bottom: 2.5px;
+  padding-top: 0;
+}
+
+/* line 71, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.field {
+  border: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+/* line 77, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.field a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 82, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.location-field {
+  width: 250px;
+}
+
+/* line 86, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+textarea {
+  color: black;
+  font-size: 12px;
+  border: 1px solid black;
+  height: 55px;
+  padding: 5px;
+  width: 375px;
+}
+
+/* line 95, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+input[type=text] {
+  color: #000;
+  font-size: 12px;
+  border: 0;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+/* line 103, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.form-num {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+/********* (1) Dashboard *********/
+/* line 110, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#dashboard-logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 28px;
+  padding-left: 15px;
+  padding-top: 10px;
+  text-align: left;
+  text-shadow: 10px 10px 50px #5AC0C8, -10px -10px 50px #5AC0C8;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/********* (2a) Submissions – New *********/
+/* line 127, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.home-link {
+  color: black;
+  float: right;
+  font-family: 'Nunito', sans serif;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+  text-decoration: none;
+}
+
+/* line 137, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 142, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.edit-link, .view-link, .delete-link {
+  color: black;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* line 151, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.submit-btn {
+  background-color: white;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+/* line 162, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.submit-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+/********* (2b) Submissisons - Show *********/
+/* line 176, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.show-label {
+  color: #ff9966;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 183, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.show-field {
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* line 189, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.edit-btn, .delete-btn, .all-entries-btn {
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/* line 200, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.edit-btn:hover, .delete-btn:hover, .all-entries-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/********* (3) Container Nation *********/
+/* line 214, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#main-container {
+  margin: 30px auto;
+}
+
+/* line 218, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#circle-container {
+  float: left;
+  margin-left: 20%;
+  margin-right: 40px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+/* line 226, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid #909090;
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  width: 400px;
+}
+
+/* line 236, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container-pink {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(255, 102, 102, 0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+/* line 246, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container-orange {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(255, 153, 102, 0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+/* line 256, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container-yellow {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(255, 204, 102, 0.7);
+  float: left;
+  height: 475px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+/* line 266, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#form-container {
+  margin-top: 30px;
+}
+
+/* line 270, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.field-container {
+  margin-bottom: 16px;
+}
+
+/* line 274, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#button-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+/* line 280, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-quote {
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* line 286, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-message {
+  /*border-bottom: 3px solid rgba(255,153,102,0.7);*/
+  font-family: 'Nunito', sans serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+}
+
+/* line 294, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.display-text {
+  font-family: 'Nunito', sans serif;
+  font-size: 18px;
+}
+
+/********* (4) Support Resources *********/
+/* line 301, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#circle1 {
+  background-color: rgba(255, 102, 102, 0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 311, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#circle2 {
+  background-color: rgba(255, 153, 102, 0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 321, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#circle3 {
+  background-color: rgba(255, 204, 102, 0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 331, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#circle4 {
+  background-color: rgba(90, 192, 200, 0.7);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 341, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.circle-star {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+/* line 348, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.circle-text {
+  color: black;
+  font-family: 'Nunito', sans serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 0;
+}
+
+/* line 357, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.circle-text:visited {
+  color: #909090;
+}
+
+/* line 361, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.circle-info {
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
+
+/* line 367, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.greyed {
+  background-color: rgba(192, 192, 192, 0.5);
+  border-radius: 50%;
+  height: 160px;
+  margin: 10px;
+  width: 160px;
+  text-align: center;
+  z-index: 2;
+}
+
+/* line 377, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.circle-text-greyed {
+  color: #909090;
+  font-family: 'Nunito', sans serif;
+  font-size: 32px;
+  font-weight: 400;
+  text-decoration: none;
+  z-index: 0;
+}
+
+/* line 386, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.send-text-btn {
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/* line 397, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.send-text-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  padding: 5px 25px;
+  text-decoration: none;
+}
+
+/********* (5a) Devise elements: edit profile *********/
+/* line 411, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.navbar-text {
+  float: right;
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: right;
+  width: 500px;
+}
+
+/* line 421, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.navbar-link {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 426, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+h2 {
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+}
+
+/* line 431, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+ul li {
+  font-family: 'Nunito', sans serif;
+  font-size: 16px;
+}
+
+/* line 436, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+h3 {
+  font-family: 'Nunito', sans serif;
+  font-size: 20px;
+}
+
+/* line 441, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.edit-user input {
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+}
+
+/* line 446, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.update-btn, .signup-btn, .login-btn {
+  background-color: white;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+/* line 457, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.update-btn:hover, .signup-btn:hover, .login-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 100px;
+}
+
+/* line 468, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.reset-btn {
+  background-color: white;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 275px;
+}
+
+/* line 479, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.reset-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 275px;
+}
+
+/* line 490, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.cancel-btn {
+  background-color: white;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  padding: 4px 20px;
+  text-decoration: none;
+}
+
+/* line 500, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+b
+.cancel-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  height: 30px;
+  width: 150px;
+}
+
+/* line 512, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container-blue {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(90, 192, 200, 0.7);
+  float: left;
+  height: auto;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+/* line 522, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.back-btn {
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  padding: 4px 25px;
+  text-decoration: none;
+}
+
+/* line 532, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.back-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 14px;
+  padding: 4px 25px;
+  text-decoration: none;
+}
+
+/* line 543, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#edit-form-container {
+  margin-top: 25px;
+}
+
+/********* (5b) Devise elements: sign up / log in; *********/
+/* line 549, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#display-container-blue-short {
+  background: rgba(255, 255, 255, 0.8);
+  border: 5px solid rgba(90, 192, 200, 0.7);
+  float: left;
+  height: 300px;
+  margin-top: 20px;
+  padding: 0 20px 20px;
+  width: 400px;
+}
+
+/********* (6) Splash page *********/
+/* line 561, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#splash-container {
+  background: rgba(90, 192, 200, 0.3);
+  padding-bottom: 40px;
+}
+
+/* line 566, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#splash-logo {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  margin-top: 100px;
+  padding: 30px 10px;
+  text-align: center;
+  text-shadow: 10px 10px 50px #fff, -10px -10px 50px #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+/* line 581, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#splash-lead {
+  font-family: 'Nunito', sans-serif;
+  font-size: 36px;
+  margin: 10px auto;
+}
+
+/* line 587, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+#splash-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0 auto;
+  padding: 0 50px 50px 50px;
+  text-align: center;
+  width: 80%;
+}
+
+/* line 597, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.splash-btn {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Nunito', sans serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* line 608, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+.splash-btn:hover {
+  background-color: #5ac0c8;
+  border: 2px solid #5ac0c8;
+  border-radius: 5px;
+  color: #fff;
+  font-family: 'Nunito', sans serif;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+/********* Media queries *********/
+@media (max-width: 1000px) {
+  /* line 620, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 15%;
+  }
+}
+@media (max-width: 900px) {
+  /* line 626, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 10%;
+    margin-right: 0;
+  }
+}
+@media (max-width: 878px) {
+  /* line 633, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+
+  /* line 636, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 10%;
+  }
+
+  /* line 639, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 0;
+  }
+}
+@media (max-width: 756px) {
+  /* line 645, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle1, #circle2, #circle3, #circle4, .greyed {
+    float: left;
+  }
+
+  /* line 648, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 10%;
+    width: 600px;
+  }
+
+  /* line 652, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 100px;
+  }
+}
+@media (max-width: 643px) {
+  /* line 659, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+
+  /* line 662, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 5%;
+    width: 600px;
+  }
+
+  /* line 666, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 75px;
+  }
+}
+@media (max-width: 608px) {
+  /* line 672, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle1, #circle2, #circle3, .greyed {
+    float: left;
+  }
+
+  /* line 675, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #circle-container {
+    margin-left: 20px;
+    width: 600px;
+  }
+
+  /* line 679, /Users/mteatran/Desktop/take-a-breather/app/assets/stylesheets/main.scss */
+  #display-container, #display-container-pink, #display-container-orange, #display-container-yellow, #display-container-blue {
+    margin-left: 60px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+ */
