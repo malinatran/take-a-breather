@@ -7,24 +7,24 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700|Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
 <body data-no-turbolink>
+  <div id="wrapper">
 
-  <p class="navbar-text">
-    <% if user_signed_in? %>
-      Logged in as <strong><%= current_user.email %></strong>.
-      <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
-      <%= link_to "Log out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-    <% else %>
-      <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Log in", new_user_session_path, :class => 'navbar-link'  %>
-    <% end %>
-  </p>
+    <div id="content">
+      <% if user_signed_in? %>
+        <p class="navbar-text">
+          Logged in as <strong><%= current_user.email %></strong>.
+          <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+        </p>
+      <% end %>
+      <%= yield %>
+      <body class="<%= @home_page ? 'homepage' : '' %>">
+    </div>
 
-  <div id="dashboard-logo">Take a Breather</div>
+    <div id="footer">
+      <p id="footer-text">&copy; 2015 Take a Breather &#9996; Made by <a href="http://www.twitter.com/MalinaTran">@MalinaTran</a></p>
+    </div>
 
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-
-  <%= yield %>
-
+  </div>
 </body>
 </html>

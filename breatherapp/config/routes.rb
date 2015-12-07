@@ -6,7 +6,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-  root 'miscellaneous#dashboard'
+  root 'miscellaneous#index'
+  get '/dashboard' => 'miscellaneous#dashboard'
   get '/connect' => 'connect#index'
   post '/sendtext' => 'send_text#create'
 
